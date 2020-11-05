@@ -1,0 +1,17 @@
+<resources>
+	<string name="app_name">AutoPilot</string>
+
+	<string name="Report"></string>
+	<string name="Add_Button"></string>
+	<string name="Withdrawal_Button"></string>
+	<string name="Sign_Out_Button"></string>
+
+	<string name="login_Edit">Username</string>
+	<string name="password_Edit">Password</string>
+	<string name="Sign_In_Button">Sign In</string>
+
+
+	<string name="submit_Button"></string>
+
+	<string name="finalize_Button"></string>
+</resources>
