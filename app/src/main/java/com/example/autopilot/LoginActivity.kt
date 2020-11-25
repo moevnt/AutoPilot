@@ -10,15 +10,23 @@ import androidx.appcompat.app.AppCompatActivity
 class LoginActivity: AppCompatActivity() {
 
     private lateinit var signInButton : Button
+    private lateinit var registerButton: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
         signInButton = findViewById(R.id.Sign_In_Button)
+        registerButton = findViewById(R.id.Register_Button)
 
         signInButton.setOnClickListener { view: View ->
             val intent = MainActivity.newIntent(this@LoginActivity)
+            startActivity(intent)
+        }
+
+        registerButton.setOnClickListener {
+            val intent = RegistrationActivity.newIntent(this@LoginActivity)
             startActivity(intent)
         }
 

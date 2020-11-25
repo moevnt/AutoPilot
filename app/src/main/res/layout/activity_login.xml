@@ -43,4 +43,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/autopilotlogo" />
 
+    <Button
+        android:id="@+id/Register_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sign_In_Button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,9 +9,14 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/Theme.AutoPilot">
-		<activity android:name=".MainActivity"/>
-		<activity android:name=".AddFundsActivity"/>
-		<activity android:name=".WithdrawalActivity"/>
+		<activity
+			android:name=".OptionsActivity"
+			android:label="@string/title_activity_options"
+			android:theme="@style/Theme.AutoPilot.NoActionBar"></activity>
+		<activity android:name=".MainActivity" />
+		<activity android:name=".RegistrationActivity"/>
+		<activity android:name=".AddFundsActivity" />
+		<activity android:name=".WithdrawalActivity" />
 		<activity android:name=".LoginActivity">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
