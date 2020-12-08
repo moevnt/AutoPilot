@@ -51,6 +51,12 @@
 		android:text="withdrawal funds" />
 
 	<Button
+		android:id="@+id/Report_Button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Create Report" />
+
+	<Button
 		android:id="@+id/Sign_Out_Button"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
