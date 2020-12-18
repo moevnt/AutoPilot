@@ -34,10 +34,8 @@ class LoginActivity: AppCompatActivity() {
 
     companion object{
         fun newIntent(packageContext : Context) : Intent {
-
-            val intent = Intent(packageContext, LoginActivity::class.java)
-
-            return intent
+    
+            return Intent(packageContext, LoginActivity::class.java)
         }
     }
 }

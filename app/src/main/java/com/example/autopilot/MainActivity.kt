@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 	private lateinit var withdrawalButton: Button
 	private lateinit var graphView : GraphView
 	private lateinit var reportButton: Button
+	private lateinit var accountInfo: Button
 
 
 	override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 		withdrawalButton = findViewById(R.id.Withdrawal_Button)
 		reportButton = findViewById(R.id.Report_Button)
 		signOut = findViewById(R.id.Sign_Out_Button)
+		accountInfo = findViewById(R.id.Account_Info_Button)
 		
 		graphView
 		graphView.visibility
@@ -49,6 +51,11 @@ class MainActivity : AppCompatActivity() {
 			toast.show()
 		}
 		
+		accountInfo.setOnClickListener{
+			val intent = RegistrationActivity.newIntent((this@MainActivity))
+			startActivity(intent)
+		}
+		
 		signOut.setOnClickListener { view : View ->
 			val intent = LoginActivity.newIntent(this@MainActivity)
 			startActivity(intent)
@@ -57,10 +64,8 @@ class MainActivity : AppCompatActivity() {
 
 	companion object{
 		fun newIntent(packageContext : Context) : Intent {
-
-			val intent = Intent(packageContext, MainActivity::class.java)
-
-			return intent
+			
+			return Intent(packageContext, MainActivity::class.java)
 		}
 	}
 }

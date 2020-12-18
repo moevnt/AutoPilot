@@ -57,6 +57,12 @@
 		android:text="Create Report" />
 
 	<Button
+		android:id="@+id/Account_Info_Button"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="Account Details" />
+
+	<Button
 		android:id="@+id/Sign_Out_Button"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
