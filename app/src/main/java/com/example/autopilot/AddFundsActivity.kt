@@ -14,6 +14,7 @@ import java.security.spec.ECField
 class AddFundsActivity : AppCompatActivity(){
 	
 	private lateinit var submitButton : Button
+	private lateinit var backButton: Button
 	private lateinit var accountNumber : EditText
 	private lateinit var depositAmount : EditText
 	
@@ -23,6 +24,7 @@ class AddFundsActivity : AppCompatActivity(){
 		
 		submitButton = findViewById(R.id.submit_Button)
 		accountNumber = findViewById(R.id.Account_Number)
+		backButton = findViewById(R.id.back_button)
 		depositAmount = findViewById(R.id.Deposit_Amount)
 		
 		submitButton.setOnClickListener { view : View ->
@@ -41,6 +43,11 @@ class AddFundsActivity : AppCompatActivity(){
 				val intent = MainActivity.newIntent(this@AddFundsActivity)
 				startActivity(intent)
 			}
+		}
+		
+		backButton.setOnClickListener {
+			val intent = MainActivity.newIntent(this@AddFundsActivity)
+			startActivity(intent)
 		}
 	}
 	

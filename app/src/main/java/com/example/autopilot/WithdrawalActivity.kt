@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 class WithdrawalActivity : AppCompatActivity() {
 
     private lateinit var finalButton : Button
+    private lateinit var backButton : Button
     private lateinit var password : EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,7 @@ class WithdrawalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_withdrawal)
 
         finalButton = findViewById(R.id.finalize_Button)
+        backButton = findViewById(R.id.back_button)
         password = findViewById(R.id.password_Edit)
 
         finalButton.setOnClickListener {
@@ -37,6 +39,11 @@ class WithdrawalActivity : AppCompatActivity() {
                 val intent = MainActivity.newIntent(this@WithdrawalActivity)
                 startActivity(intent)
             }
+        }
+    
+        backButton.setOnClickListener {
+            val intent = MainActivity.newIntent(this@WithdrawalActivity)
+            startActivity(intent)
         }
     }
     
